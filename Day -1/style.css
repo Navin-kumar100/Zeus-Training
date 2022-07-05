@@ -1,41 +1,50 @@
-.container{
-    display: flex;
-    width: 457px;
-    height: 138px;
-    margin: 4px;
+.container {
+  display: flex;
+  width: 457px;
+  height: 138px;
+  margin: 4px;
 }
-.sub-container{
-    padding-left: 14px;
+
+.sub-container {
+  padding-left: 14px;
 }
+
 img {
-    width: 130px;
-    height: 130px;
-    float: left;
-    object-fit: cover;
-  }
-  .username {
-    font-weight: bold;
-    font-family: 'Roboto';
-    margin-bottom: 14px;
-    font-size: 20px;
-  }
-  .bio{
-    margin-bottom: 24px;
-    font-family: 'Roboto';
-    font-size: 20px;
-  }
-  .fa-comment,.fa-retweet ,.fa-heart{
-    width: 20px;
-    height: 20px;
+  width: 130px;
+  height: 130px;
+  float: left;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-.fa-comment{
-    margin-right: 14px;  
+
+.username {
+  font-weight: bold;
+  font-family: "Roboto";
+  margin-bottom: 14px;
+  font-size: 20px;
 }
-.fa-retweet{
-    margin-right: 14px;
-    margin-left: 24px;
+
+.bio {
+  margin-bottom: 24px;
+  font-family: "Roboto";
+  font-size: 20px;
 }
-.fa-heart{
-    margin-right: 14px;
-    margin-left: 24px;
+
+.fa-comment, .fa-retweet, .fa-heart {
+  width: 20px;
+  height: 20px;
 }
+
+.fa-comment {
+  margin-right: 14px;
+}
+
+.fa-retweet {
+  margin-right: 14px;
+  margin-left: 24px;
+}
+
+.fa-heart {
+  margin-right: 14px;
+  margin-left: 24px;
+}/*# sourceMappingURL=style.css.map */
