@@ -1,0 +1,16 @@
+.image {
+    max-width: 400px;
+    max-height: 400px;
+    height: 400px;
+    background-image: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 1em;
+    object-fit: cover;
+}
+
+.input-div {
+    margin: 0.5em;
+    margin-left: 1em;
+}
