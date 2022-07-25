@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins','sans-serif';
+}
+nav{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background:#1b1b1b ;
+    width: 280px;
+    line-height: 40px;
+    padding: 8px 25px;
+    border-radius: 5px;
+
+}
+nav label{
+    color: #1F7A54;
+    font-size: 22px;
+    font-weight: 600px;
+    display: block;
+    cursor: pointer
+    ;
+}
+.button span{
+    float: right;
+    line-height: 35px;
+}
+.menu{
+    display: none;
+    box-shadow: 0px 13px 20px #0000003D;
+}
+nav ul{
+    position: absolute;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 2px;
+    
+    list-style: none;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    border-radius: 5px;
+    display: none;
+}
+[id^=btn]:checked+ul{
+    display: block;
+}
+
+nav .menu::before{
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+ background:#1b1b1b;
+ right: 20px;
+ top: -10px;
+ transform: rotate(45deg);
+ z-index: -1;
+}
+nav ul li{
+    line-height: 40px;
+    padding: 8px 20px;
+    cursor: pointer;
+}
+nav ul li label{
+    font-size: 18px;
+}
+nav ul li a{
+    color: #1F7A54;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+}
+nav ul li a:hover ,nav ul li label:hover{
+    color: gray;
+}
+nav ul ul{
+    position: static;
+padding-left: 30px;
+border-bottom: none;
+
+}
+nav ul ul li{
+    line-height:30px ;
+} 
+nav ul ul li a{
+   font-size: 17px;
+   color: #1F7A54;
+} 
+nav ul li span{
+   font-size: 20px;
+   float: right;
+   margin-top: 10px;
+   padding: 0 10px;
+
+}
+input{
+    display: none;
+}

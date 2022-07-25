@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum dashboard</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://kit.fontawesome.com/c05dd939fe.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <img class="logo-header" src="/Images/icons/logousedinheader.svg" alt="logo">
+
+        <div class="nav-content">
+            <ul class="nav-menu">
+                <li class="nav-item"><a class="nav-link" href="#"> Dashboard </a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Content</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">User</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Reports</a></li>
+            </ul>
+            <div>
+                <ul class="icon-nav">
+                    <li class="icon-li">
+                        <a href="#" id="badgeid">
+                            <img class="notification-img" src="/Images/icons/alerts.svg" alt="alerts">
+                            <span class="badge1">3</span>
+                        </a>
+                    </li>
+                    <li id="myBtn" class="icon-li">
+                        <a href="#" id="badgeid2">
+                            <img class="announcement-img" src="/Images/icons/announcements.svg" alt="announcement">
+                            <span class="badge2">2</span>
+                        </a>
+
+                    </li>
+
+                    <li class="dropdown icon-li">
+                        <a href="#" onclick="myFunction()" class="dropbtn" id="badgeid3">
+                            <img class="profile-img" src="/Images/Profile-img.jpg" alt="pic">
+                            <span class="badgeT">T</span>
+                        </a>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="#home">Home</a>
+                            <a href="#about">About</a>
+                            <a href="#contact">Contact</a>
+                        </div>
+
+                    </li>
+
+                </ul>
+            </div>
+
+
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+
+
+    </nav>
+
+    <div class="annoancement">
+        <div class="main-annoancement scroll1">
+
+            <div class="content1-annoancement">
+                <div class="cart-content1">
+                    <span class="cart-ann">
+                        <span class="cart-span">
+                            <p>PA:</p>
+                            <p>Wilson Kumar</p>
+                        </span>
+                        <img class="greentic" src="./Images/greentick.png" alt="greentic">
+                    </span> 
+                    <span class="heading-anno">No classes will be held on 21st Nov</span>
+                <div class="div-file">
+                    <span class="file-attach"><i class="fa-solid fa-paperclip-vertical"></i> 2 files are attached</span>
+                    <span class="file-attach">15-Sep-2018 at 07:21 pm</span>
+                </div>
+                </div>
+            </div>
+            <div class="content-annoancement">
+                <div class="cart-content1">
+                    <span class="cart-ann">
+                        <span class="cart-span">
+                            <p>PA:</p>
+                            <p>Samson White</p>
+                        </span>
+                        <img class="greentic" src="./Images/minus.png" alt="greentic">
+                    </span> 
+                    <span class="heading-anno">Guest lecture on Geometry on 20th September</span>
+                <div class="div-file">
+                    <span class="file-attach"><i class="fa-solid fa-paperclip-vertical"></i> 2 files are attached</span>
+                    <span class="file-attach">15-Sep-2018 at 07:21 pm</span>
+                </div>
+                </div>
+            </div>
+
+            <!-- 2nd pair -->
+            <div class="content1-annoancement">
+                <div class="cart-content1">
+                    <span class="cart-ann">
+                        <span class="cart-span">
+                            <p>PA:</p>
+                            <p>Wilson Kumar</p>
+                        </span>
+                        <img class="greentic" src="./Images/greentick.png" alt="greentic">
+                    </span> 
+                    <span class="heading-anno">Additional course materials available on request</span>
+                <div class="course-div"><span>Course: Mathematics 101</span></div>
+                    <div class="div-file">
+                    <span class="file-attach"><i class="fa-solid fa-paperclip-vertical"></i></span>
+                    <span class="file-attach">15-Sep-2018 at 07:21 pm</span>
+                </div>
+                </div>
+            </div>
+            <div class="content-annoancement">
+                <div class="cart-content1">
+                    <span class="cart-ann">
+                        <span class="cart-span">
+                            <p>PA:</p>
+                            <p>Wilson Kumar</p>
+                        </span>
+                        <img class="greentic" src="./Images/minus.png" alt="greentic">
+                    </span> 
+                    <span class="heading-anno">No classes will be held on 21st Nov</span>
+                <div class="div-file">
+                    <span class="file-attach"><i class="fa-solid fa-paperclip-vertical"></i> </span>
+                    <span class="file-attach">15-Sep-2018 at 07:21 pm</span>
+                </div>
+                </div>
+            </div>
+            <!-- 3 -->
+            <div class="content-annoancement">
+                <div class="cart-content1">
+                    <span class="cart-ann">
+                        <span class="cart-span">
+                            <p>PA:</p>
+                            <p>Wilson Kumar</p>
+                        </span>
+                        <img class="greentic" src="./Images/minus.png" alt="greentic">
+                    </span> 
+                    <span class="heading-anno">No classes will be held on 21st Nov</span>
+                <div class="div-file">
+                    <span class="file-attach"><i class="fa-solid fa-paperclip-vertical"></i> 2 files are attached</span>
+                    <span class="file-attach">15-Sep-2018 at 07:21 pm</span>
+                </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer-annoancemet">
+            <span>Show All</span>
+            <hr>
+            <span>Create New</span>
+        </div>
+    </div>
+
+    <!-- notification  -->
+    <div class="notification">
+        <div class="main-annoancement scroll1">
+            <div class="content-annoancement">
+                <div class="cart-content1">
+                    <span class="cart-ann">
+                        
+                        <span class="heading-anno">License for Introduction to Algebra has been assigned to your school</span>
+                        <img class="greentic" src="./Images/minus.png" alt="greentic">
+                    </span> 
+                <div class="div-file">
+                    <span class="file-attach"><i class="fa-solid fa-paperclip-vertical"></i> </span>
+                    <span class="file-attach">15-Sep-2018 at 07:21 pm</span>
+                </div>
+                </div>
+            </div>
+            <div class="content1-annoancement">
+                <div class="cart-content1">
+                    <span class="cart-ann">
+    
+                        <span class="heading-anno">Lesson 3 Practice Worksheet overdue for Amy Santiago</span>
+                        <img class="greentic" src="./Images/greentick.png" alt="greentic">
+                    </span> 
+                <div class="course-div"><span>Course: <strong>Advanced Mathematics</strong></span></div>
+
+                <div class="div-file">
+                    <span class="file-attach"><i class="fa-solid fa-paperclip-vertical"></i></span>
+                    <span class="file-attach">15-Sep-2018 at 05:21 pm</span>
+                </div>
+                </div>
+            </div>
+
+            <!-- 2nd pair -->
+            <div class="content-annoancement">
+                <div class="cart-content1">
+                    <span class="cart-ann">
+                        <span class="cart-span">
+                      <span class="heading-anno">23 new students created</span>
+                        </span>
+                        <img class="greentic" src="./Images/minus.png" alt="greentic">
+                    </span> 
+                    
+                    <div class="div-file">
+                    <span class="file-attach"><i class="fa-solid fa-paperclip-vertical"></i></span>
+                    <span class="file-attach">15-Sep-2018 at 05:21 pm</span>
+                </div>
+                </div>
+            </div>
+            <div class="content1-annoancement">
+                <div class="cart-content1">
+                    <span class="cart-ann">
+                        <span class="heading-anno">15 submissions ready for evaluation</span>
+                        <img class="greentic" src="./Images/minus.png" alt="greentic">
+                    </span> 
+                    <div class="course-div"><span>Class: <strong> Basics of Algebra</strong></span></div>
+
+                <div class="div-file">
+                    <span class="file-attach"><i class="fa-solid fa-paperclip-vertical"></i> </span>
+                    <span class="file-attach">15-Sep-2018 at 07:21 pm</span>
+                </div>
+                </div>
+            </div>
+            <!-- 3 -->
+            <div class="content-annoancement">
+                <div class="cart-content1">
+                    <span class="cart-ann">
+                        <span class="heading-anno">No classes will be held on 21st Nov</span>
+                        <img class="greentic" src="./Images/minus.png" alt="greentic">
+                    </span>
+                <div class="course-div"><span>Course: <strong>Advanced Mathematics</strong></span></div>
+
+                <div class="div-file">
+                    <span class="file-attach"><i class="fa-solid fa-paperclip-vertical"></i> </span>
+                    <span class="file-attach">15-Sep-2018 at 07:21 pm</span>
+                </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer-annoancemet">
+            <span>Show All</span>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+
+  
+    <!-- <span class="close">&times;</span> -->
+
+
+    <main class="container">
+        <div class="containernav">
+            <div class="first-slider">
+                <img src="/Images/icons/courses.svg" alt="courses">
+                <h4 class="header-course">
+                 <span>4 </span>    Courses
+                </h4>
+            </div>
+            <div class="sec-slider">
+                <img src="/Images/icons/classes.svg" alt="class">
+                <h4 class="header-course">
+                    <span>5 </span> Classes
+                </h4>
+            </div>
+        </div>
+
+        <!-- sorting -->
+        <div class="sorting-div">
+            <h5 class="sort-h5">Showing 4 of 4 courses</h3>
+                <div class="subsorting">
+                    <p class="sort-h5">Sort By :</p>
+                    <select class="sort-select" name="coursesname">
+                        <option value="">Course name</option>
+                        <option value="">Course B</option>
+                    </select>
+                    <span>
+                        <img src="/Images/icons/sort.svg" alt="sort">
+                    </span>
+                </div>
+        </div>
+
+        <!-- card -->
+
+        <div class="allcart">
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div id="footerdiv">
+            <img src="/Images/icons/logousedinfooter.svg" alt="footerlogo">
+            <div class="footer-content">
+                <p class="ft-p"> | <span class="ft-span"> Copyright</span> <span> &copy;</span> 2020-2021
+                    <span class="ft2-span">Zeus Systems Pvt. Ltd.</span>
+                    <span class="ft2-span">All rights reserved.</span>
+                </p>
+
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>

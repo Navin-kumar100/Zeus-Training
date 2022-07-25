@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>drop dwon</title>
+    <link rel="stylesheet" href="dropdwon.css">
+    <script src="https://kit.fontawesome.com/c05dd939fe.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="res-menu">
+        <label for="btn" class="button">Drop dwon
+            <span class="fa-solid fa-angle-down"></span>
+        </label>
+        <!-- <input type="checkbox" id="btn"> -->
+
+         <ul class="menu"> 
+            <li><a href="#">DASHBOARD</a> </li>
+            
+            <li>
+                <label for="btn-2" class="first">CONTENT 
+                    <span class="fa-solid fa-angle-down"></span>
+                </label>
+                <input type="checkbox" id="btn-2">
+                <ul>
+                    <li><a href="#">COURSE CATALOG</a></li>
+                </ul>
+            </li>
+            <li>
+                <label for="btn-3" class="secound">USERS
+                <span class="fa-solid fa-angle-down"></span>
+            </label>
+                <input type="checkbox" id="btn-3">
+                <ul>
+                    <li><a href="#">wen design</a></li>
+                    <li><a href="#">App design</a></li>
+                </ul>
+            </li>
+          
+            <li>
+                <label for="btn-4" class="first">REPORT 
+                    <span class="fa-solid fa-angle-down"></span>
+                </label>
+                <input type="checkbox" id="btn-4">
+                <ul>
+                    <li><a href="#">Pages</a></li>
+                </ul>
+            </li>
+            
+            <li>
+                <label for="btn-4" class="first">ADMIN 
+                    <span class="fa-solid fa-angle-down"></span>
+                </label>
+                <input type="checkbox" id="btn-4">
+                <ul>
+                    <li><a href="#">Pages</a></li>
+                </ul>
+            </li>
+        </ul> 
+    </nav>
+<script>
+    const btn=document.querySelector(".button")
+    const menu=document.querySelector(".menu")
+
+    btn.addEventListener("mouseout",()=>{
+menu.style.display="none"
+     });
+     btn.addEventListener("click",()=>{
+menu.style.display="block"
+     });
+     menu.addEventListener("mouseover",()=>{
+menu.style.display="block"
+     });
+
+</script>
+
+</body>
+
+</html>
