@@ -72,22 +72,48 @@ exports.createUser = createUser;
 //   // console.log(result);
 //   response.status(200).json({ message: `User modified with ID: ${id}` });
 // };
+// export const updateUser = async (request, response) => {
+//   const id: number = parseInt(request.params.id);
+//   const { firstname, lastname, age } = request.body;
+//   try {
+//     const result = await db.none(
+//       "UPDATE users SET firstname = COALESCE (NULLIF($1, ''), firstname),lastname = COALESCE (NULLIF($2, ''), lastname), age = COALESCE (NULLIF($3, ''), age)   WHERE id = $4",
+//       [firstname, lastname, age, id]
+//     );
+//     if (!result) throw Error;
+//     response.status(200).json({ message: `User modified with ID: ${id}` });
+//   } catch (error) {
+//     console.log(error);
+//   }
+//   // console.log(result);
+// };
+// delete user
 const updateUser = (request, response) => __awaiter(void 0, void 0, void 0, function* () {
     const id = parseInt(request.params.id);
     const { firstname, lastname, age } = request.body;
+    const data = { firstname, lastname, age };
+    // {name: 'foo', email:undefined, password:'bar}
+    //Remove ONLY undefined keys from data
+    Object.keys(data).forEach(key => { if (data[key] === undefined)
+        delete data[key]; });
+    let query = 'UPDATE users SET';
+    let i = 1;
+    Object.keys(data).forEach((key, index) => { query += ` ${key}=$${index + 1},`; i++; });
+    query = query.slice(0, -1); // Remove exceeding comma
+    query += ` WHERE id=$${i}`;
+    const values = Object.values(data);
+    values.push(id);
     try {
-        const result = yield config_1.db.none("UPDATE users SET firstname = COALESCE (NULLIF($1, ''), firstname),lastname = COALESCE (NULLIF($2, ''), lastname), age = COALESCE (NULLIF($3, ''), age)   WHERE id = $4", [firstname, lastname, age, id]);
+        const result = yield config_1.db.none(query, values);
         if (!result)
             throw Error;
-        response.status(200).json({ message: `User modified with ID: ${id}` });
     }
     catch (error) {
         console.log(error);
     }
-    // console.log(result);
+    response.status(200).json({ message: `User modified with ID: ${id}` });
 });
 exports.updateUser = updateUser;
-// delete user
 const deleteUser = (request, response) => __awaiter(void 0, void 0, void 0, function* () {
     const id = parseInt(request.params.id);
     try {
